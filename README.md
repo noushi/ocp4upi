@@ -95,3 +95,4 @@ oc get csr -o go-template='{{range .items}}{{if not .status}}{{.metadata.name}}{
 ```
 
 
+watch -n1 'oc get clusteroperator ;  oc get po -n openshift-image-registry -o wide '
