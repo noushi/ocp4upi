@@ -96,3 +96,13 @@ oc get csr -o go-template='{{range .items}}{{if not .status}}{{.metadata.name}}{
 
 
 watch -n1 'oc get clusteroperator ;  oc get po -n openshift-image-registry -o wide '
+
+
+
+
+git clone https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
+mkdir nfs-csi
+cp -R nfs-subdir-external-provisioner/deploy -R nfs-csi
+
+
+
