@@ -8,3 +8,4 @@ openshift-install create ignition-configs --dir=.
 sudo cp *.ign /var/www/html/openshift4/4.6.4/ignitions/
 sudo chmod +r /var/www/html/openshift4/4.6.4/ignitions/*.ign
 
+openshift-install --dir=. wait-for bootstrap-complete
